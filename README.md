@@ -1,2 +1,3 @@
 # go
-go path
+go path test ...
+backup

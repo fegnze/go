@@ -1,4 +1,4 @@
-# go learn record
+#                               learn record
 version 1
 ---
 1.存储`GoPath`<br>

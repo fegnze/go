@@ -1,15 +1,14 @@
-package main
+package learn
 
 import (
 	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
-	"os"
 	"time"
 )
 
-func fetch(url string, ch chan<- string) {
+func Fetch(url string, ch chan<- string) {
 	start := time.Now()
 	resp, err := http.Get(url)
 	if err != nil {
@@ -26,18 +25,4 @@ func fetch(url string, ch chan<- string) {
 
 	secs := time.Since(start).Seconds()
 	ch <- fmt.Sprintf("%.2fs	%7d	%s", secs, nbytes, url)
-}
-
-func main() {
-	start := time.Now()
-	ch := make(chan string)
-	for _, url := range os.Args[1:] {
-		go fetch(url, ch)
-	}
-
-	for range os.Args[1:] {
-		fmt.Println(<-ch)
-	}
-
-	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
 }

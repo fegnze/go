@@ -1,5 +1,0 @@
-package myhttp
-
-func httpServer() {
-
-}

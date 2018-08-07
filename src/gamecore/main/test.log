@@ -1,0 +1,25 @@
+[INFO]2018/08/07 15:03:05 This is a info ... 
+[VERBOSE]2018/08/07 15:03:05 This is a verbose ,log
+[#DEBUG#]2018/08/07 15:03:05 This is a debug 1,*** 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go12)
+[#ERROR#!!]2018/08/07 15:03:05 This is a Error log,1 2 3 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go13)
+[INFO]2018/08/07 15:06:24 This is a info ... 
+[VERBOSE]2018/08/07 15:06:24 This is a verbose ,log
+[#DEBUG#]2018/08/07 15:06:24 This is a debug 1,*** 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go12)
+[ERROR#!!]2018/08/07 15:06:24 This is a Error log,1 2 3 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go13)
+[INFO]2018/08/07 15:07:09 This is a info ... 
+[VERBOSE]2018/08/07 15:07:09 This is a verbose ,log
+[#DEBUG#]2018/08/07 15:07:09 This is a debug 1,*** 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go12)
+[INFO]2018/08/07 15:07:24 This is a info ... 
+[VERBOSE]2018/08/07 15:07:24 This is a verbose ,log
+[#DEBUG#]2018/08/07 15:07:24 This is a debug 1,*** 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go11)
+[ERROR#!!]2018/08/07 15:07:24 This is a Error log,1 2 3 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go12)
+[INFO]2018/08/07 15:09:19 This is a info ... 
+[VERBOSE]2018/08/07 15:09:19 This is a verbose ,log
+[#DEBUG#]2018/08/07 15:09:19 This is a debug 1,*** 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go12)
+[INFO]2018/08/07 15:13:50 This is a info ... 
+[VERBOSE]2018/08/07 15:13:50 This is a verbose ,log
+[#DEBUG#]2018/08/07 15:13:50 This is a debug 1,*** 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go12)
+[ERROR#!!]2018/08/07 15:18:27 logger is already exist ... 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/core/glog/glog.go134)
+[INFO]2018/08/07 15:18:50 This is a info ... 
+[VERBOSE]2018/08/07 15:18:50 This is a verbose ,log
+[#DEBUG#]2018/08/07 15:18:50 This is a debug 1,*** 	callpos=>(E:/WorkSpace/GoWorld/src/gamecore/main/main.go12)

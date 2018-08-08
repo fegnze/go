@@ -135,20 +135,16 @@ func OpenLog() {
 	}
 	var err error
 	if _, err1 := os.Stat(logFilePath); os.IsNotExist(err1) {
-		//fmt.Println("文件不存在，创建文件")
 		logFile, err = os.Create(logFilePath)
 		if err != nil {
-			// fmt.Println(logFilePath)
 			log.Fatalf("%v\n,open log file err ... %s", err, logFilePath)
 		}
 	} else {
-		//fmt.Println("文件存在")
 		logFile, err = os.OpenFile(logFilePath, os.O_APPEND, 0666)
 	}
 
 	//log.LUTC|log.Lmicroseconds ,世界统一时间|毫秒时间
 	logger = log.New(logFile, "", log.Ldate|log.Ltime)
-	//fmt.Println("创建logger。")
 }
 
 func isFileExist(file string) bool {

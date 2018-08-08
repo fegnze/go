@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"gamecore/core/conf"
 	"gamecore/core/glog"
 )
 
@@ -13,4 +14,6 @@ func main() {
 	//glog.Error("This is a Error log", 1, 2, 3)
 
 	fmt.Println("====================")
+
+	fmt.Println(conf.LogLevel, conf.LogFilePath)
 }

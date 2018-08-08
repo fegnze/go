@@ -2,7 +2,7 @@ package glog
 
 import (
 	"fmt"
-	"gamecore/core/configs"
+	"gamecore/core/conf"
 	"log"
 	"os"
 	"runtime"
@@ -24,8 +24,8 @@ const (
 	prefixVERBOSE = "[VERBOSE]"
 )
 
-var logLevel, _ = strconv.Atoi(configs.Configs["log_level"])
-var logFilePath = configs.Configs["log_file_path"]
+var logLevel = conf.LogLevel
+var logFilePath = conf.LogFilePath
 var logFile *os.File
 var logger *log.Logger
 
@@ -138,7 +138,8 @@ func OpenLog() {
 		//fmt.Println("文件不存在，创建文件")
 		logFile, err = os.Create(logFilePath)
 		if err != nil {
-			fmt.Println("open log file err ... ")
+			// fmt.Println(logFilePath)
+			log.Fatalf("%v\n,open log file err ... %s", err, logFilePath)
 		}
 	} else {
 		//fmt.Println("文件存在")

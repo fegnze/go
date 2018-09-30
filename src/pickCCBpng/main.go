@@ -61,7 +61,7 @@ func main() {
 	}
 	// args := []string{"", `E:\WorkSpace\Kapai\Games\sks-heti\ui_ccb\ui\Resources\layout\interface\accouterexchange01.ccb`, `E:\WorkSpace\Kapai\Games\sks-heti\ui_ccb\ui\Resources\layout\interface\accouterinfo01.ccb`}
 	// for _, f := range args[1:] {
-	for _, f := range args[1:] {
+	for _, f := range args {
 		loger.Println("ccbfile:" + f)
 		f = strings.Replace(f, "\\", "/", -1)
 		ccbfile, err := ioutil.ReadFile(f)

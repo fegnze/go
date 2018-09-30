@@ -18,8 +18,9 @@ var (
 	LogFilePath = configStruct.LogFilePath
 )
 
-func init() {
-	data, err := ioutil.ReadFile("conf/configs.json")
+//Parse 解析配置文件
+func Parse(file string) {
+	data, err := ioutil.ReadFile(file)
 	if err != nil {
 		log.Fatalf("conf:%v", err)
 	}

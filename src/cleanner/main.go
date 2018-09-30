@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 )
 
@@ -45,5 +47,26 @@ func clearDir(path string, do func(path string)) {
 }
 
 func main() {
-	clearDir("./", nil)
+	var errFile string
+	defer func() {
+		if err := recover(); err != nil {
+			fileObj, _ := os.OpenFile(errFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
+			io.WriteString(fileObj, fmt.Sprintf("ERR:%v", err))
+		}
+	}()
+
+	var param string
+	if len(os.Args) > 1 {
+		param = os.Args[1]
+	} else {
+		param = os.Args[0]
+	}
+
+	dir, err := filepath.Abs(filepath.Dir(param))
+	errFile = filepath.Join(dir, "error.txt")
+	if err != nil {
+		panic(err)
+	}
+	path := strings.Replace(dir, "\\", "/", -1)
+	clearDir(path, nil)
 }

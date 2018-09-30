@@ -1,0 +1,4 @@
+读取配置文件失败... open ./ini.json: The system cannot find the file specified.
+resDir:.
+args:
+[E:\WorkSpace\Kapai\Games\sks-heti\ui_ccb\ui\Resources\replaceCCBpng.exe E:\WorkSpace\GoWorld\src\excel2json\equip.xlsx]

@@ -1,0 +1,4 @@
+{
+	"logLevel": 4,
+	"logFilePath": "./log/test.log"
+}

@@ -1,9 +1,8 @@
 package main
 
 import (
-	"gamecore/core/Ktlog"
-	"gamecore/core/conf"
-	"gamecore/server/services"
+	"ktnet/core/ktlog"
+	"ktnet/server/services"
 )
 
 func main() {
@@ -13,11 +12,11 @@ func main() {
 	// Ktlog.Debug("This is a debug %d,%s", 1, "***")
 	// //Ktlog.Error("This is a Error log", 1, 2, 3)
 	conf.Parse("conf/configs.json")
-	Ktlog.OpenLog()
+	ktlog.OpenLog()
 
 	test := "Hello GO"
-	Ktlog.Info(test)
+	ktlog.Info(test)
 
 	services.StartHTTPServer(":3000")
-	Ktlog.Info("-----------")
+	ktlog.Info("-----------")
 }

@@ -1,7 +1,6 @@
-package KtHttp
+package kthttp
 
 import (
-	"gamecore/core/KtNet/KtHttp/11111"
 	"net/http"
 	"net/url"
 )

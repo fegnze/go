@@ -1,4 +1,4 @@
-package Ktlog
+package ktlog
 
 import (
 	"testing"

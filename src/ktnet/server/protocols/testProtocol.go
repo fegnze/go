@@ -1,7 +1,7 @@
 package protocols
 
 import (
-	"gamecore/core/ktNet/KtHttp"
+	"ktnet/core/kthttp"
 	"net/http"
 	"net/url"
 )
@@ -16,7 +16,7 @@ type ProtoTest struct {
 
 func (proto *ProtoTest) excute(query *url.Values) KtHttp.ProtoError {
 
-	return KtHttp.ProtoError{
+	return kthttp.ProtoError{
 		Code: 1,
 		Msg:  "error",
 	}

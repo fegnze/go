@@ -1,4 +1,4 @@
-package KtHttp
+package kthttp
 
 import (
 	"encoding/json"

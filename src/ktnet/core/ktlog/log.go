@@ -1,8 +1,8 @@
-package Ktlog
+package ktlog
 
 import (
 	"fmt"
-	"gamecore/core/conf"
+	"ktnet/core/ktconf"
 	"log"
 	"os"
 	"runtime"
@@ -24,8 +24,8 @@ const (
 	prefixVERBOSE = "[VERBOSE]"
 )
 
-var logLevel = conf.LogLevel
-var logFilePath = conf.LogFilePath
+var logLevel = ktconf.LogLevel
+var logFilePath = ktconf.LogFilePath
 var logFile *os.File
 var logger *log.Logger
 

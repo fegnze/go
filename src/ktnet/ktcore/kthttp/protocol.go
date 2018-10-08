@@ -12,11 +12,11 @@ type Proto struct {
 func (proto *Proto) excute(query *url.Values) ProtoError {
 
 	return ProtoError{
-		Code: 1,
-		Msg:  "error",
+		Code: -100,
+		Msg:  "base protocol",
 	}
 }
 
 func (proto *Proto) response(w *http.ResponseWriter) {
-	test.Test()
+
 }

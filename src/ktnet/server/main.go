@@ -1,22 +1,32 @@
 package main
 
 import (
-	"ktnet/core/ktlog"
+	"ktnet/ktcore"
+	"ktnet/ktcore/ktlog"
 	"ktnet/server/services"
+	"time"
 )
 
+func release() {
+	ktcore.Release()
+	time.Sleep(10 * time.Second)
+}
+
 func main() {
-	//Ktlog.OpenLog()
-	// Ktlog.Info("This is a info ... ")
-	// Ktlog.Verbose("This is a verbose ", "log")
-	// Ktlog.Debug("This is a debug %d,%s", 1, "***")
-	// //Ktlog.Error("This is a Error log", 1, 2, 3)
-	conf.Parse("conf/configs.json")
-	ktlog.OpenLog()
+	defer release()
 
-	test := "Hello GO"
-	ktlog.Info(test)
+	ktcore.Init("configs.json")
 
-	services.StartHTTPServer(":3000")
+	ktlog.Info("Hello GO")
+	ktlog.Verbose("This is a verbose", "...")
+	ktlog.Warning("This is a debug %d,%s", 1, "***")
+	ktlog.Error("This is a Error log", 1, 2, 3)
+	//ktlog.Panic("无法解决的异常,阻断程序运行")
+
+	ktlog.OpenLogN("login")
+	ktlog.InfoN("login", "这是另一个logger")
+
+	services.Init()
 	ktlog.Info("-----------")
+
 }

@@ -2,7 +2,7 @@ package kthttp
 
 import (
 	"encoding/json"
-	"gamecore/core/Ktlog"
+	"ktnet/ktcore/ktlog"
 	"net/http"
 	"net/url"
 )
@@ -19,7 +19,7 @@ type ProtoError struct {
 	Msg  string
 }
 
-//Server KtHttp server实例
+//Server kthttp server实例
 type Server struct {
 	protoAcount int
 	httpServer  *http.Server
@@ -47,7 +47,7 @@ func (server *Server) RegistRout(path string, proto ProtoInterface, method strin
 					})
 				}
 				if _, error := w.Write(data); error != nil {
-					Ktlog.Error("http get [%s] write error:%s", path, error.Error())
+					ktlog.Error("http get [%s] write error:%s", path, error.Error())
 				}
 
 			}
@@ -94,16 +94,16 @@ func RegistServer(hs *http.Server) *Server {
 //StartService 开启http服务
 func (server *Server) StartService() {
 	if server.httpServer == nil || server.httpServer.Addr == "" {
-		Ktlog.Panic("http server Start failed.")
+		ktlog.Panic("http server Start failed.")
 		return
 	}
 	if server.protoAcount <= 0 {
-		Ktlog.Error("http server has no proto registed.")
+		ktlog.Error("http server has no proto registed.")
 	}
-	Ktlog.Info("Listening on %s...", server.httpServer.Addr)
+	ktlog.Info("Listening on %s...", server.httpServer.Addr)
 	//会一直阻塞执行
 	if err := server.httpServer.ListenAndServe(); err != nil {
-		Ktlog.Info("Listening error", err.Error())
+		ktlog.Info("Listening error", err.Error())
 	}
 }
 

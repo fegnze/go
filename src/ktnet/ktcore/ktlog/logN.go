@@ -126,6 +126,7 @@ func InfoN(name string, formatStr string, v ...interface{}) {
 		if strings.Index(formatStr, "%") > -1 {
 			str := fmt.Sprintf(formatStr, v...)
 			logger[name].Println(str)
+			fmt.Println(str)
 		} else {
 			str := fmt.Sprint(v...)
 			str = formatStr + "," + str
@@ -159,6 +160,7 @@ func VerboseN(name string, formatStr string, v ...interface{}) {
 
 	} else {
 		logger[name].Println(formatStr)
+		fmt.Println(formatStr)
 	}
 }
 

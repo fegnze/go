@@ -23,8 +23,8 @@ func main() {
 	ktlog.Error("This is a Error log", 1, 2, 3)
 	//ktlog.Panic("无法解决的异常,阻断程序运行")
 
-	ktlog.OpenLogN("login")
-	ktlog.InfoN("login", "这是另一个logger")
+	// ktlog.OpenLogN("login")
+	// ktlog.InfoN("login", "这是另一个logger")
 
 	services.Init()
 	ktlog.Info("-----------")

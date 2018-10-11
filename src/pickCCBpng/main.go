@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -31,24 +32,29 @@ func main() {
 	conFile := "./ini.json"
 	file, err := ioutil.ReadFile(conFile)
 	if err != nil {
+		fmt.Println("[ERROR:]读取配置文件失败...", err.Error())
 		loger.Panicln("[ERROR:]读取配置文件失败...", err.Error())
 	} else {
 		var cfst conf
 		if err = json.Unmarshal(file, &cfst); err != nil {
+			fmt.Println("[ERROR:]解析配置文件失败...", err.Error())
 			loger.Panicln("[ERROR:]解析配置文件失败...", err.Error())
 		} else {
 			resDir = cfst.ResDir
 		}
 	}
+	fmt.Println("resDir:" + resDir)
 	loger.Println("resDir:" + resDir)
 
 	//2.读取ccb
 	args := []string{}
 	if we := filepath.Walk("./ccb", func(path string, info os.FileInfo, err error) error {
 		if err != nil {
+			fmt.Println("[ERROR]遍历ccb文件" + path + "有误," + err.Error())
 			loger.Panicln("[ERROR]遍历ccb文件" + path + "有误," + err.Error())
 		}
 		if info.IsDir() {
+			fmt.Println("[WARNING]遍历ccb文件夹," + path + "忽略文件夹,")
 			loger.Println("[WARNING]遍历ccb文件夹," + path + "忽略文件夹,")
 			return nil
 		}
@@ -57,15 +63,26 @@ func main() {
 		}
 		return nil
 	}); we != nil {
+		fmt.Println("[ERROR]遍历ccb文件夹失败" + we.Error())
 		loger.Panicln("[ERROR]遍历ccb文件夹失败" + we.Error())
 	}
+
+	//删除输出目录
+	// if info, err := os.Stat("./output/"); err == nil && info.IsDir() {
+	// 	fmt.Println("删除output目录")
+	// 	loger.Println("删除output目录")
+	// 	os.RemoveAll("./output/")
+	// }
+
 	// args := []string{"", `E:\WorkSpace\Kapai\Games\sks-heti\ui_ccb\ui\Resources\layout\interface\accouterexchange01.ccb`, `E:\WorkSpace\Kapai\Games\sks-heti\ui_ccb\ui\Resources\layout\interface\accouterinfo01.ccb`}
 	// for _, f := range args[1:] {
 	for _, f := range args {
+		fmt.Println("ccbfile:" + f)
 		loger.Println("ccbfile:" + f)
 		f = strings.Replace(f, "\\", "/", -1)
 		ccbfile, err := ioutil.ReadFile(f)
 		if err != nil {
+			fmt.Println("读取ccb文件"+f+"失败", err.Error())
 			loger.Panicln("读取ccb文件"+f+"失败", err.Error())
 		}
 
@@ -83,6 +100,7 @@ func main() {
 			path := resDir + "/" + png
 			pngfile, err := ioutil.ReadFile(path)
 			if err != nil {
+				fmt.Println("[ERROR]读取png文件" + path + "失败")
 				loger.Println("[ERROR]读取png文件" + path + "失败")
 			} else {
 				fp := "./output/" + ccbname + "/" + png
@@ -91,8 +109,10 @@ func main() {
 				os.MkdirAll(fd, 0777)
 				out := "./output/" + ccbname + "/" + png
 				if err := ioutil.WriteFile(fp, pngfile, os.ModePerm); err != nil {
+					fmt.Println("写入文件png文件"+out+"失败", err.Error())
 					loger.Panicln("写入文件png文件"+out+"失败", err.Error())
 				} else {
+					fmt.Println("拷贝文件" + path + "到" + out)
 					loger.Println("拷贝文件" + path + "到" + out)
 				}
 			}

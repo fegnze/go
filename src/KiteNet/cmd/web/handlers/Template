@@ -1,0 +1,26 @@
+package handlers
+
+//Template 模板
+import (
+	"KiteNet/httpkt"
+	"KiteNet/log"
+	"net/http"
+)
+
+
+//templateReqProto 模板,客户端请求数据,本地类型
+type templateReqProto struct{}
+
+//templateResProto 模板,返回数据
+type templateResProto struct{}
+
+//TemplateHandler 模板,处理函数
+func TemplateHandler(w http.ResponseWriter, r *http.Request) {
+    glog.Debug("TemplateHandler ... 模板")
+	reqProto := &templateReqProto{}
+	httpkt.ParseReqProto(r, reqProto)
+	//TODO -执行服务逻辑
+
+	//TODO -写入返回消息
+	httpkt.ReturnJSON(w, &templateResProto{})
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cells cpp="110" svn="1001" time="2018032901">
+	<cell md5="1c06cde27249320f41099d6973570e5b" size="1713" name="core_res/img/ui_guard_oilfield.plist" />
+	<cell md5="8b16c5ee0fac3203b049809c1c871382" size="17843" name="core_res/img/ui_guard_oilfield.png" />
+	<cell md5="fd028550dccf608649d62f58070a0d08" size="303041" name="core_res/script/Template/Template/GiftDataTemplate.lua" />
+	<cell md5="f1eaf9cacea9950411428ed2a7e3f020" size="63901" name="core_res/script/Template/Template/ItemTemplate.lua" />
+	<cell md5="f393198fc69f5ff3384519fe79b7bbd5" size="1020481" name="core_res/script/Template/TemplateLang/TemplateLang.lua" />
+</cells>

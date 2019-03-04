@@ -503,3 +503,5 @@ ccbfile:ccb\accouterplacing01.ccb
 拷贝文件E:/WorkSpace/Kapai/Games/sks-heti/ui_ccb/ui/Resources/layout/layoutpic/d_f_444.png到./output/accouterplacing01/layout/layoutpic/d_f_444.png
 拷贝文件E:/WorkSpace/Kapai/Games/sks-heti/ui_ccb/ui/Resources/layout/layoutpic/d_f_067.png到./output/accouterplacing01/layout/layoutpic/d_f_067.png
 拷贝文件E:/WorkSpace/Kapai/Games/sks-heti/ui_ccb/ui/Resources/layout/layoutpic/d_f_001.png到./output/accouterplacing01/layout/layoutpic/d_f_001.png
+resDir:E:/WorkSpace/Kapai/Games/sks-heti/ui_ccb/ui/Resources
+[WARNING]遍历ccb文件夹,./ccb忽略文件夹,

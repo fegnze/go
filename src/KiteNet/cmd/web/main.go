@@ -69,9 +69,13 @@ func main() {
 					conf := &config.Configs{}
 					global.Conf = conf
 					buf, err := ioutil.ReadFile(file)
-					utils.CheckErr(err)
+					if err != nil {
+						log.Panicln(err)
+					}
 					err = json.Unmarshal(utils.JsonNormalize(buf), conf)
-					utils.CheckErr(err)
+					if err != nil {
+						log.Panicln(err)
+					}
 					log.Println("读取配置:", conf)
 
 					//初始化日志系统

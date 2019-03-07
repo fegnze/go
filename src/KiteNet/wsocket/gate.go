@@ -1,4 +1,4 @@
-package gate
+package wsocket
 
 import (
 	"KiteNet/log"

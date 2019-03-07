@@ -1,4 +1,4 @@
-package gate
+package wsocket
 
 import (
 	"github.com/rs/xid"

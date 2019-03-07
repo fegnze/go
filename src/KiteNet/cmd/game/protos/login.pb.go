@@ -3,7 +3,7 @@
 
 //包名，通过protoc生成时go文件时
 
-package proto
+package protos
 
 import (
 	fmt "fmt"

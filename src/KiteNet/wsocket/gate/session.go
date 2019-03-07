@@ -1,30 +1,36 @@
 package gate
 
 import (
-	"KiteNet/utils"
 	"github.com/rs/xid"
-	"golang.org/x/net/websocket"
+)
+
+type CloseCode int
+
+const (
+	CloseNormal  CloseCode = iota
+	CloseTimeOut CloseCode = iota
 )
 
 //Session
 type Session struct {
-	ID   xid.ID
-	Conn *websocket.Conn
+	ID xid.ID
+
+	readChan  chan []byte
+	writeChan chan []byte
+	sysChan   chan CloseCode
 }
 
-//Recive
-func (ss *Session) Recive(msg []byte) {
-	service.DispatchMsg(ss.ID, msg)
+//Read
+func (ss *Session) Read(msg []byte) {
+	proxy.DispatchMsg(ss.ID, msg)
 }
 
 //Write
 func (ss *Session) Write(msg []byte) {
-	n, err := ss.Conn.Write(msg)
-	utils.CheckNilAndErr(n, err)
+	ss.writeChan <- msg
 }
 
 //Close
-func (ss *Session) Close() {
-	err := ss.Conn.Close()
-	utils.CheckErr(err)
+func (ss *Session) Close(code CloseCode) {
+	ss.sysChan <- code
 }

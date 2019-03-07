@@ -1,6 +1,8 @@
-package login
+package agent
 
 import (
+	"KiteNet/cmd/game/module"
+	"KiteNet/cmd/game/protos"
 	"KiteNet/utils"
 	"KiteNet/wsocket/gate"
 	"github.com/golang/protobuf/proto"
@@ -12,7 +14,7 @@ import (
 //agent
 type Agent struct {
 	session *gate.Session
-	pid     xid.ID
+	player  *module.Player
 
 	lastReciveTime  time.Time
 	tickerLock      sync.Mutex
@@ -24,8 +26,13 @@ func (agent *Agent) Recive(data []byte) {
 	agent.lastReciveTime = time.Now()
 	agent.tickerLock.Unlock()
 
+	len := data[:2]
+	protoType := data[2:6]
+	msgID := data[6:8]
+	msgData := data[8:]
+
 	if agent.pid == xid.NilID() {
-		loginData := &Login{}
+		loginData := &protos.Login{}
 		err := proto.Unmarshal(data, loginData)
 		utils.CheckErr(err)
 
@@ -38,8 +45,8 @@ func (agent *Agent) Send(data []byte) {
 	agent.session.Write(data)
 }
 
-func (agent *Agent) DisConnet() {
-
+func (agent *Agent) DisConnet(code gate.CloseCode) {
+	agent.session.Close(code)
 }
 
 func (agent *Agent) Connect() {
@@ -59,10 +66,14 @@ R:
 			agent.tickerLock.Unlock()
 
 			if interval > 10 {
-				agent.DisConnet()
+				agent.DisConnet(gate.CloseTimeOut)
 			}
 		case <-agent.tickerCloseChan:
 			break R
 		}
 	}
+}
+
+func (agent *Agent) Release() {
+	agent.session = nil
 }

@@ -24,19 +24,37 @@ type SessChanMsg struct {
 }
 
 var sess map[xid.ID]*Session
-var sessSysChan chan SessChanMsg
-var service ServiceInterface
+var proxy ProxyInterface
 
 //wsHandle
 func wsHandle(conn *websocket.Conn) {
 	request := make([]byte, 128)
 	defer conn.Close()
 
+	id := utils.CreateUniqueCode()
 	s := &Session{
-		ID: utils.CreateUniqueCode(),
+		ID: id,
 	}
 	sess[id] = s
-	service.BindSession(s)
+	proxy.BindSession(s)
+
+	go func(session *Session, c *websocket.Conn) {
+	R:
+		for {
+			select {
+			case code := <-session.sysChan:
+				if code == 1 {
+					err := c.Close()
+					utils.CheckErr(err)
+					break R
+				}
+				//TODO
+			case data := <-session.writeChan:
+				n, err := c.Write(data)
+				utils.CheckNilAndErr(n, err)
+			}
+		}
+	}(s, conn)
 
 	for {
 		readlen, err := conn.Read(request)
@@ -46,25 +64,28 @@ func wsHandle(conn *websocket.Conn) {
 
 		if readlen == 0 {
 			glog.Info("Client connection close!")
+			s.Close(CloseNormal)
 			break
 		} else {
 			glog.Debug(string(request[:readlen]))
-			s.Recive(request[:readlen])
+			s.Read(request[:readlen])
 		}
 
 		request = make([]byte, 128)
 	}
+
+	proxy.BindSession(s)
+	delete(sess, id)
 }
 
 //Listen
-func Listen(addr string, path string, s ServiceInterface) {
+func Listen(addr string, path string, p ProxyInterface) {
 	if path == "" {
 		path = "ws"
 	}
 
 	sess = make(map[xid.ID]*Session)
-	sessSysChan = make(chan SessChanMsg)
-	service = s
+	proxy = p
 
 	http.Handle("/"+path, websocket.Handler(wsHandle))
 	err := http.ListenAndServe(addr, nil)

@@ -1,4 +1,4 @@
-package login
+package agent
 
 import (
 	"KiteNet/wsocket/gate"
@@ -17,7 +17,6 @@ func init() {
 	Proxy = ProxyService{
 		agentMap: make(map[xid.ID]*Agent),
 	}
-
 }
 
 //BindSession 绑定session
@@ -32,10 +31,12 @@ func (s *ProxyService) BindSession(session *gate.Session) {
 
 //DispatchMsg 分发消息
 func (s *ProxyService) DispatchMsg(sessionID xid.ID, data []byte) {
+	//TODO 是否会阻塞协程
 	s.agentMap[sessionID].Recive(data)
 }
 
 //SendMessage 发送数据给客户端
-func (s *ProxyService) SendMessage(sessionID xid.ID, data []byte) {
-
+func (s *ProxyService) UnBindSession(sessionID xid.ID) {
+	s.agentMap[sessionID].Release()
+	delete(s.agentMap, sessionID)
 }

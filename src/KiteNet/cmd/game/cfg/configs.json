@@ -1,0 +1,25 @@
+{
+  "server": {
+    //名称
+    "name": "game",
+    "http": {
+      "ip": "172.16.0.78",
+      "port": "3100"
+    },
+    "websocket": {
+      "ip": "172.16.0.78",
+      "port": "3200"
+    }
+  },
+  //日志相关配置
+  "log": {
+    //日志文件所在目录,必须是完整存在目录
+    "path": "./logs/",
+    //日志文件前缀名,可不填
+    "filePrefixName": "game",
+    //日志文件保存时间,单位h
+    "fileDuration": 72,
+    //日志文件分割时间,单位h
+    "splitDuration": 24
+  }
+}

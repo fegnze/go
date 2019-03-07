@@ -1,0 +1,15 @@
+//指定版本
+//注意proto3与proto2的写法有些不同
+syntax = "proto3";
+
+//包名，通过protoc生成时go文件时
+package login;
+
+message Login {
+    string Pid = 1;
+}
+
+
+message BeatHart {
+    int64 OnlineTime = 1;
+}

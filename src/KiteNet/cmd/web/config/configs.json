@@ -3,13 +3,13 @@
   "web": {
     //名称
     "name": "web",
-    "ip": "172.16.0.131",
+    "ip": "172.16.0.78",
     "port": "2001",
     //数据库配置
     "db": {
       "host": "localhost:3306",
       "user": "root",
-      "password": "111111",
+      "password": "123456",
       "dbname": "worldship"
     },
     //静态文件托管配置
@@ -20,13 +20,13 @@
   },
   //游戏world服务器配置
   "world": {
-    "ip": "172.16.0.131",
+    "ip": "172.16.0.78",
     "port": "22020"
   },
   //日志相关配置
   "log": {
     //日志文件所在目录,必须是完整存在目录
-    "path": "C:/Users/Administrator/go/src/KiteNet/cmd/web/logs/",
+    "path": "./logs/",
     //日志文件前缀名,可不填
     "filePrefixName": "",
     //日志文件保存时间,单位h

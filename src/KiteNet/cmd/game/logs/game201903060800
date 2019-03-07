@@ -1,0 +1,2 @@
+2019-03-06 12:32:08 [INFO] 初始化HTTP服务 (E:/WorkSpace/GoWorld/src/KiteNet/cmd/game/main.go:81) 
+2019-03-06 12:32:08 [INFO] listening at "172.16.0.78:3100" (E:/WorkSpace/GoWorld/src/KiteNet/httpkt/app.go:72) 

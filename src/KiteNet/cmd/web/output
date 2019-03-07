@@ -1,2 +1,4 @@
-2019/02/28 14:39:43 配置文件: C:/Users/Administrator/go/src/KiteNet/cmd/web/config/configs.json
-2019/02/28 14:39:43 读取配置: &{{web 172.16.0.131 2001 {localhost:3306 root 111111 worldship} {./statices/ /download/}} {172.16.0.131 22020} {C:/Users/Administrator/go/src/KiteNet/cmd/web/logs/  72ns 24ns}}
+2019/03/05 12:01:34 配置文件: E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/config/configs.json
+2019/03/05 12:01:35 读取配置: &{{web 172.16.0.78 2001 {localhost:3306 root 123456 worldship} {./statices/ /download/}} {172.16.0.78 22020} {./logs/  72ns 24ns}}
+r/go/src/KiteNet/cmd/web/logs/  72ns 24ns}}
+24ns}}

@@ -24,16 +24,16 @@ func InitWithConfig(logPath string, logFileName string, maxAge time.Duration, ro
 		baseLogFile = baseLogFile + "/"
 	}
 	debugWriter, err := rotatelogs.New(
-		baseLogFile+"%Y%m%d%H%M_debug"+".log",
-		rotatelogs.WithLinkName(baseLogFile+"now_debug.log"), //生成软连接,指向最新日志文件
-		rotatelogs.WithMaxAge(maxAge),                        //文件最大保存时间
-		rotatelogs.WithRotationTime(rotationTime),            //日志切割时间间隔
+		baseLogFile+"%Y%m%d%H%M_debug",
+		rotatelogs.WithLinkName(baseLogFile+"now_debug"), //生成软连接,指向最新日志文件
+		rotatelogs.WithMaxAge(maxAge),                    //文件最大保存时间
+		rotatelogs.WithRotationTime(rotationTime),        //日志切割时间间隔
 	)
 	writer, err := rotatelogs.New(
-		baseLogFile+"%Y%m%d%H%M"+".log",
-		rotatelogs.WithLinkName(baseLogFile+"now.log"), //生成软连接,指向最新日志文件
-		rotatelogs.WithMaxAge(maxAge),                  //文件最大保存时间
-		rotatelogs.WithRotationTime(rotationTime),      //日志切割时间间隔
+		baseLogFile+"%Y%m%d%H%M",
+		rotatelogs.WithLinkName(baseLogFile+"now"), //生成软连接,指向最新日志文件
+		rotatelogs.WithMaxAge(maxAge),              //文件最大保存时间
+		rotatelogs.WithRotationTime(rotationTime),  //日志切割时间间隔
 	)
 	if err != nil {
 		logrus.Errorf("Init log with config error.%+v", errors.WithStack(err))
@@ -71,7 +71,7 @@ func InitWithConfig(logPath string, logFileName string, maxAge time.Duration, ro
 }
 
 //Deepin 设置临时深度
-func Deepin(d int){
+func Deepin(d int) {
 	if deep == defaultDeep {
 		deep = d
 	}
@@ -91,14 +91,14 @@ func GetLine(skip int) (ret string) {
 }
 
 //格式化msg, 将其中的结构体转换成字符串,原理:利用switch type将地址转换类型为实际的值
-func format(args ...interface{})interface{} {
-	for k,v := range args {
+func format(args ...interface{}) interface{} {
+	for k, v := range args {
 		switch value := v.(type) {
 		case string:
 		case error:
 		case int:
 		default:
-			args[k] = fmt.Sprintf("%+v",value)
+			args[k] = fmt.Sprintf("%+v", value)
 		}
 	}
 	deep = defaultDeep
@@ -106,51 +106,51 @@ func format(args ...interface{})interface{} {
 }
 
 func Debug(args ...interface{}) {
-	logrus.WithField("line", GetLine(deep)).Debug(format(args ...))
+	logrus.WithField("line", GetLine(deep)).Debug(format(args...))
 	deep = defaultDeep
 }
 
 func Info(args ...interface{}) {
 	if isdebug {
-		logrus.WithField("line", GetLine(deep)).Info(format(args ...))
+		logrus.WithField("line", GetLine(deep)).Info(format(args...))
 	} else {
-		logrus.Info(format(args ...))
+		logrus.Info(format(args...))
 	}
 	deep = defaultDeep
 }
 
 func Warning(args ...interface{}) {
 	if isdebug {
-		logrus.WithField("line", GetLine(deep)).Warning(format(args ...))
+		logrus.WithField("line", GetLine(deep)).Warning(format(args...))
 	} else {
-		logrus.Warning(format(args ...))
+		logrus.Warning(format(args...))
 	}
 	deep = defaultDeep
 }
 
 func Panic(args ...interface{}) {
 	if isdebug {
-		logrus.WithField("line", GetLine(deep)).Panic(format(args ...))
+		logrus.WithField("line", GetLine(deep)).Panic(format(args...))
 	} else {
-		logrus.Panic(format(args ...))
+		logrus.Panic(format(args...))
 	}
 	deep = defaultDeep
 }
 
 func Error(err error, args ...interface{}) {
 	if err != nil {
-		logrus.WithError(err).WithField("line", GetLine(deep)).Error(format(args ...))
+		logrus.WithError(err).WithField("line", GetLine(deep)).Error(format(args...))
 	} else {
-		logrus.WithField("line", GetLine(deep)).Error(format(args ...))
+		logrus.WithField("line", GetLine(deep)).Error(format(args...))
 	}
 	deep = defaultDeep
 }
 
 func Fatal(args ...interface{}) {
 	if isdebug {
-		logrus.WithField("line", GetLine(deep)).Fatal(format(args ...))
+		logrus.WithField("line", GetLine(deep)).Fatal(format(args...))
 	} else {
-		logrus.Fatal(format(args ...))
+		logrus.Fatal(format(args...))
 	}
 	deep = defaultDeep
 }

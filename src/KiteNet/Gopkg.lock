@@ -10,22 +10,6 @@
   version = "v1.3.0"
 
 [[projects]]
-  digest = "1:318f1c959a8a740366fce4b1e1eb2fd914036b4af58fbd0a003349b305f118ad"
-  name = "github.com/golang/protobuf"
-  packages = ["proto"]
-  pruneopts = "UT"
-  revision = "c823c79ea1570fb5ff454033735a8e68575d1d0f"
-  version = "v1.3.0"
-
-[[projects]]
-  digest = "1:7b5c6e2eeaa9ae5907c391a91c132abfd5c9e8a784a341b5625e750c67e6825d"
-  name = "github.com/gorilla/websocket"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "66b9c49e59c6c48f0ffce28c2d8b8a5678502c6d"
-  version = "v1.4.0"
-
-[[projects]]
   branch = "master"
   digest = "1:f7d8e8432e355163397d2da1e17d0fb616d611db1360c43b1ac73e56f87038e2"
   name = "github.com/lestrrat/go-file-rotatelogs"
@@ -74,6 +58,14 @@
   version = "v0.8.7"
 
 [[projects]]
+  branch = "master"
+  digest = "1:7427036b6d926b3d1fa0773771820735b35554a98296f1074df440ee30a97296"
+  name = "golang.org/x/net"
+  packages = ["websocket"]
+  pruneopts = "UT"
+  revision = "16b79f2e4e95ea23b2bf9903c9809ff7b013ce85"
+
+[[projects]]
   branch = "v2"
   digest = "1:927bc5076aef9916f1920f2a07e3723e9da1dcd52baa84d29893a3f417c867b4"
   name = "gopkg.in/urfave/cli.v2"
@@ -86,13 +78,12 @@
   analyzer-version = 1
   input-imports = [
     "github.com/go-sql-driver/mysql",
-    "github.com/golang/protobuf/proto",
-    "github.com/gorilla/websocket",
     "github.com/lestrrat/go-file-rotatelogs",
     "github.com/pkg/errors",
     "github.com/rifflock/lfshook",
     "github.com/rs/xid",
     "github.com/sirupsen/logrus",
+    "golang.org/x/net/websocket",
     "gopkg.in/urfave/cli.v2",
   ]
   solver-name = "gps-cdcl"

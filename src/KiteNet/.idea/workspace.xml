@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f16cfb4-09a2-40bf-8d42-27112985bcc5" name="默认更改列表" comment="" />
+    <list default="true" id="8f16cfb4-09a2-40bf-8d42-27112985bcc5" name="默认更改列表" comment="默认更改列表">
+      <change afterPath="$PROJECT_DIR$/cmd/game/cfg/configs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/game/cfg/configs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/game/login/agent.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/game/login/gate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/game/login/player.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/game/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/game/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/game/proto/login.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsocket/gate/gate.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsocket/gate/proxy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wsocket/gate/session.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/KiteNet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KiteNet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/config/configs.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/config/configs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/web/output" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/log/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/tcp/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/agent.go" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,89 +63,87 @@
     <favorites_list name="KiteNet" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="825">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmd/game/login/gate.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmd/game/login/agent.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+              <folding>
+                <element signature="e#15#76#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmd/game/login/player.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmd/web/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1805">
-              <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+            <state relative-caret-position="243">
+              <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmd/web/db/init.go">
+        <entry file="file://C:/Go/src/time/time.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmd/web/worldship.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2052">
-              <caret line="108" column="2" selection-start-line="108" selection-start-column="2" selection-end-line="108" selection-end-column="2" />
+            <state relative-caret-position="279">
+              <caret line="1100" column="41" selection-start-line="1100" selection-start-column="41" selection-end-line="1100" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cmd/web/handlers/version.go">
+        <entry file="file://$PROJECT_DIR$/wsocket/gate/gate.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="757">
+              <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmd/web/db/version.go">
+        <entry file="file://$PROJECT_DIR$/cmd/game/proto/login.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="252">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gopkg.lock">
+        <entry file="file://$PROJECT_DIR$/wsocket/gate/proxy.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="90">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tcp/client/client.go">
+        <entry file="file://$PROJECT_DIR$/wsocket/gate/session.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1064">
-              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tcp/client/session.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tcp/agent.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tcp/service.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="252">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -142,22 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>receiveChan</find>
-      <find>writeChan</find>
-      <find>wch</find>
-      <find>levels</find>
-      <find>VersionHandler HttpExec ...</find>
-      <find>回传数据:</find>
-      <find>fmt.</find>
-      <find>log.</find>
-      <find>Panicln</find>
-      <find>fmt</find>
-      <find>回传数据</find>
-      <find>ParseReqProto</find>
-      <find>message</find>
-      <find>struc</find>
-      <find>v</find>
-      <find>value</find>
       <find>object</find>
       <find>line</find>
       <find>appendKeyValue</find>
@@ -172,19 +175,43 @@
       <find>debug</find>
       <find>StaticesHandler</find>
       <find>AllLevels</find>
+      <find>hooks</find>
+      <find>levels</find>
+      <find>utils</find>
+      <find>Web</find>
+      <find>conf</find>
+      <find>Configs</find>
+      <find>Dispatch</find>
+      <find>Handler</find>
+      <find>SessSysChan</find>
+      <find>WriteCloser</find>
+      <find>WriteClose</find>
+      <find>status</find>
+      <find>defaultCloseStatus</find>
+      <find>SendMessage</find>
+      <find>DisConnet</find>
+      <find>service</find>
     </findStrings>
     <replaceStrings>
       <replace>HttpExec</replace>
       <replace>http</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>E:\WorkSpace\GoWorld\src\KiteNet</dir>
+    </dirStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="fegnze &lt;fegnze@outlook.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="GoDepProject">
     <integration-enabled>true</integration-enabled>
-    <exec-path>C:\Users\Administrator\go\bin\dep.exe</exec-path>
+    <exec-path>E:\WorkSpace\GoWorld\bin\dep.exe</exec-path>
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -192,39 +219,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tcp/client/session.go" />
-        <option value="$PROJECT_DIR$/cmd/web/config-complete.go" />
-        <option value="$PROJECT_DIR$/cmd/web/configs.json" />
-        <option value="$PROJECT_DIR$/cmd/web/configs.go" />
-        <option value="$PROJECT_DIR$/cmd/web/global/global.go" />
-        <option value="$PROJECT_DIR$/cmd/web/db/region.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/region/get.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/stepAnalytics.go" />
-        <option value="$PROJECT_DIR$/tcp/session.go" />
-        <option value="$PROJECT_DIR$/tcp/agent.go" />
-        <option value="$PROJECT_DIR$/cmd/gameserver/main.go" />
-        <option value="$PROJECT_DIR$/cmd/web/output" />
-        <option value="$PROJECT_DIR$/log/formatter.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/region/find.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/login/tourist/bind.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/login/tourist/get.go" />
-        <option value="$PROJECT_DIR$/cmd/web/global/ErrorCode.go" />
-        <option value="$PROJECT_DIR$/cmd/web/global/code/ErrorCode.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/login/mix.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/login/account/bind.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/login/account/regist.http" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/login/account/regist.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/Template" />
-        <option value="$PROJECT_DIR$/cmd/web/db/account.go" />
-        <option value="$PROJECT_DIR$/cmd/web/global/code/ErrorCode/ErrorCode.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/tourist/get.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/account/login.go" />
-        <option value="$PROJECT_DIR$/cmd/web/handlers/init.go" />
         <option value="$PROJECT_DIR$/cmd/web/handlers/account/bind.go" />
         <option value="$PROJECT_DIR$/cmd/web/handlers/account/register.go" />
         <option value="$PROJECT_DIR$/httpkt/default.go" />
         <option value="$PROJECT_DIR$/tcp/client/client.go" />
-        <option value="$PROJECT_DIR$/log/logger.go" />
         <option value="$PROJECT_DIR$/cmd/web/logs/now_debug.log" />
         <option value="$PROJECT_DIR$/cmd/web/logs/now.log" />
         <option value="$PROJECT_DIR$/utils/check.go" />
@@ -236,21 +234,50 @@
         <option value="$PROJECT_DIR$/httpkt/statices.go" />
         <option value="$PROJECT_DIR$/httpkt/app.go" />
         <option value="$PROJECT_DIR$/cmd/web/config/configs.go" />
-        <option value="$PROJECT_DIR$/cmd/web/main.go" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/cmd/web/config/configs.json" />
         <option value="$PROJECT_DIR$/cmd/web/statices/android/cells.xml.hash" />
-        <option value="$PROJECT_DIR$/websocket/agent.go" />
-        <option value="$PROJECT_DIR$/vendor/github.com/rifflock/lfshook/lfshook.go" />
         <option value="$PROJECT_DIR$/cmd/web/handlers/version.go" />
+        <option value="$PROJECT_DIR$/cmd/web/config/configs.json" />
+        <option value="$PROJECT_DIR$/websocket/client.go" />
+        <option value="$PROJECT_DIR$/websocket/server.go" />
+        <option value="$PROJECT_DIR$/vendor/github.com/rifflock/lfshook/lfshook.go" />
+        <option value="$PROJECT_DIR$/cmd/game/config/configs.json" />
+        <option value="$PROJECT_DIR$/cmd/web/main.go" />
+        <option value="$PROJECT_DIR$/cmd/game/config/configs.go" />
+        <option value="$PROJECT_DIR$/cmd/game/cfg/configs.json" />
+        <option value="$PROJECT_DIR$/cmd/game/cfg/configs.go" />
+        <option value="$PROJECT_DIR$/log/logger.go" />
+        <option value="$PROJECT_DIR$/cmd/game/main.go" />
+        <option value="$PROJECT_DIR$/websocket/session.go" />
+        <option value="$PROJECT_DIR$/websocket/agent.go" />
+        <option value="$PROJECT_DIR$/websocket/agentService.go" />
+        <option value="$PROJECT_DIR$/websocket/agent/service.go" />
+        <option value="$PROJECT_DIR$/websocket/agent/agent.go" />
+        <option value="$PROJECT_DIR$/websocket/agent/session.go" />
+        <option value="$PROJECT_DIR$/cmd/game/agent.go" />
+        <option value="$PROJECT_DIR$/tcp/service.go" />
+        <option value="$PROJECT_DIR$/wsocket/agent/session.go" />
+        <option value="$PROJECT_DIR$/wsocket/agent/service.go" />
+        <option value="$PROJECT_DIR$/cmd/game/entity/player.go" />
+        <option value="$PROJECT_DIR$/wsocket/agent/proxy.go" />
+        <option value="$PROJECT_DIR$/wsocket/agent/agent.go" />
+        <option value="$PROJECT_DIR$/cmd/game/agent/login.go" />
+        <option value="$PROJECT_DIR$/cmd/game/agent/agent.go" />
+        <option value="$PROJECT_DIR$/wsocket/gate/agent.go" />
+        <option value="$PROJECT_DIR$/cmd/game/login/login.go" />
+        <option value="$PROJECT_DIR$/cmd/game/login/gate.go" />
+        <option value="$PROJECT_DIR$/cmd/game/login/login.proto" />
+        <option value="$PROJECT_DIR$/cmd/game/login/player.go" />
+        <option value="$PROJECT_DIR$/cmd/game/login/agent.go" />
+        <option value="$PROJECT_DIR$/wsocket/gate/gate.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="-7" />
-    <option name="width" value="1934" />
-    <option name="height" value="1214" />
+    <option name="x" value="-222" />
+    <option name="y" value="55" />
+    <option name="width" value="1918" />
+    <option name="height" value="1160" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -258,6 +285,46 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
+              <item name="wsocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
+              <item name="wsocket" type="462c0819:PsiDirectoryNode" />
+              <item name="gate" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -269,23 +336,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
@@ -294,22 +354,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\GoWorld\src\KiteNet\cmd\game\proto" />
+      <recent name="E:\WorkSpace\GoWorld\src\KiteNet\cmd\game\agent" />
+      <recent name="E:\WorkSpace\GoWorld\src\KiteNet\websocket\agent" />
+      <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\statices" />
+      <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\handlers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\GoWorld\src\KiteNet\cmd\game" />
       <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\statices\android" />
       <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\statices" />
       <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\statices\vendor" />
       <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\statices\pages" />
-      <recent name="C:\Users\Administrator\go\src\KiteNet\utils" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\statices" />
-      <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\handlers" />
-      <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\handlers\login\account" />
-      <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\global\code\ErrorCode" />
-      <recent name="C:\Users\Administrator\go\src\KiteNet\cmd\web\global\code" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -329,51 +389,80 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.game">
+    <configuration name="game" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="KiteNet" />
+      <working_directory value="E:\WorkSpace\GoWorld\src\KiteNet\cmd\game" />
+      <parameters value="start -d -c ./cfg/configs.json" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/cmd/game/main.go" />
+      <package value="KiteNet" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="KiteNet" />
-      <working_directory value="C:\Users\Administrator\go\src\KiteNet\cmd\web" />
+      <working_directory value="E:\WorkSpace\GoWorld\src\KiteNet\cmd\web" />
       <parameters value="start -c $PROJECT_DIR$/cmd/web/config/configs.json -d" />
       <kind value="FILE" />
-      <filePath value="C:\Users\Administrator\go\src\KiteNet\cmd\web\main.go" />
+      <filePath value="E:\WorkSpace\GoWorld\src\KiteNet\cmd\web\main.go" />
       <package value="fegnze/KiteNet" />
       <directory value="C:\Users\Administrator\go\src\KiteNet\cmd\web" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.game" />
+      <item itemvalue="Go Build.web" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.web" />
       </list>
     </recent_temporary>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49957663" visible="true" weight="0.24360341" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49957663" visible="true" weight="0.24087983" />
       <window_info id="Structure" order="1" sideWeight="0.5004234" side_tool="true" weight="0.20591398" />
       <window_info id="Favorites" order="2" sideWeight="0.5004234" side_tool="true" weight="0.20591398" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295207" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.3163597" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49839056" weight="0.32852387" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49195278" weight="0.31964484" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32963374" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49892703" weight="0.32963374" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919787" weight="0.32914045" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026652" side_tool="true" visible="true" weight="0.31527627" />
-      <window_info anchor="bottom" id="调试" order="12" sideWeight="0.4983957" weight="0.33278868" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49517167" visible="true" weight="0.27081022" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50482833" side_tool="true" visible="true" weight="0.27081022" />
+      <window_info anchor="bottom" id="调试" order="12" sideWeight="0.49731758" weight="0.3318535" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49973118" weight="0.32973894" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.23560767" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.2360515" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改启动时err提示" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改启动时err提示" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -392,302 +481,353 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cmd/web/handlers/region/find.go">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        <state relative-caret-position="360">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/db/account.go">
+    <entry file="file://$PROJECT_DIR$/log/formatter.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/sirupsen/logrus/logrus.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        <state relative-caret-position="479">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/handlers/account/register.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="20" />
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/rifflock/lfshook/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="288">
+            <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/handlers/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/net/http/request.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="1183" column="27" selection-start-line="1183" selection-start-column="18" selection-end-line="1183" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/handlers/account/bind.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/handlers/account/login.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/logger.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/logs/now_debug.log" />
-    <entry file="file://$PROJECT_DIR$/cmd/web/logs/now.log" />
-    <entry file="file://$PROJECT_DIR$/cmd/web/output">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/check.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/statices/icheck.html" />
-    <entry file="file://$PROJECT_DIR$/cmd/web/statices/vendor/dist/js/sb-admin-2.js" />
-    <entry file="file://$PROJECT_DIR$/cmd/web/statices/vendor/metisMenu/metisMenu.js" />
-    <entry file="file://$PROJECT_DIR$/cmd/web/handlers/stepAnalytics.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httpkt/default.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" selection-start-line="9" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/statices/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/statices/version.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/statices/index0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httpkt/statices.go" />
-    <entry file="file://C:/Go/src/net/http/fs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="722" column="51" selection-start-line="722" selection-start-column="47" selection-end-line="722" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8db135fd-6e2f-46f6-937f-3e020cef0946/schema/worldship/table/version" />
-    <entry file="file://$PROJECT_DIR$/httpkt/app.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httpkt/handler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httpkt/protobase.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2196">
-          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/os/env.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3492">
-          <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/config/configs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/statices/android/test" />
-    <entry file="file://$PROJECT_DIR$/cmd/web/config/configs.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/statices/android/cells.xml.hash">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/tcpServer/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="130" column="33" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/rifflock/lfshook/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Gopkg.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="252">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/tcpServer/Player.go">
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/sirupsen/logrus/hooks.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="234">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tcp/session.go">
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/sirupsen/logrus/entry.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="324">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/tcpServer/service.go">
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/sirupsen/logrus/exported.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="234">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="das://8db135fd-6e2f-46f6-937f-3e020cef0946/schema/worldship/table/game_region" />
-    <entry file="file://$PROJECT_DIR$/websocket/agent.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/sirupsen/logrus/formatter.go">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/github.com/rifflock/lfshook/lfshook.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6120">
-          <caret line="179" column="16" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/github.com/gorilla/websocket/conn.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8424">
-          <caret line="246" column="26" selection-start-line="246" selection-start-column="26" selection-end-line="246" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1805">
-          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/db/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/worldship.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="108" column="2" selection-start-line="108" selection-start-column="2" selection-end-line="108" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/db/version.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="137">
+          <caret line="177" column="20" lean-forward="true" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gopkg.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="72">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tcp/client/client.go">
+    <entry file="file://$PROJECT_DIR$/cmd/web/output">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tcp/client/session.go">
+    <entry file="file://$PROJECT_DIR$/cmd/web/config/configs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/web/config/configs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/json.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/cfg/configs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/cfg/configs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="45" selection-end-column="18" />
+          <folding>
+            <element signature="e#16#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/output">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/logs/game201903060800.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/logs/game201903060800">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/check.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/tcpServer/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/httpkt/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/golang.org/x/net/websocket/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/net/http/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="2879" column="5" selection-start-line="2879" selection-start-column="5" selection-end-line="2879" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/random.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/gorilla/websocket/conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="503" column="46" selection-start-line="503" selection-start-column="46" selection-end-line="503" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/golang.org/x/net/websocket/websocket.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tcp/agent.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+        <state relative-caret-position="137">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tcp/session.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tcp/service.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="162">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/handlers/version.go">
+    <entry file="file://$PROJECT_DIR$/cmd/tcpServer/Player.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="288">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/tcpServer/service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/decode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="333" column="5" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/time/tick.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsocket/gate/session.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/entity/player.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/login/login.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/web/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/proto/login.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/proto/login.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/time/time.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="1100" column="41" selection-start-line="1100" selection-start-column="41" selection-end-line="1100" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/login/player.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/login/gate.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/game/login/agent.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="e#15#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsocket/gate/proxy.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsocket/gate/gate.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
         </state>
       </provider>
     </entry>

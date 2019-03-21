@@ -3,6 +3,7 @@ package handlers
 import (
 	"KiteNet/cmd/web/handlers/account"
 	"KiteNet/cmd/web/handlers/region"
+	"KiteNet/cmd/web/handlers/sdk"
 	"KiteNet/cmd/web/handlers/tourist"
 	"KiteNet/httpkt"
 )
@@ -20,4 +21,6 @@ var RoutMap = httpkt.RoutMap{
 	"/worldship/mix/account/bind": account.BindHandler,
 	"/worldship/mix/account/register": account.RegisterHandler,
 	"/worldship/mix/login/tourist/get": tourist.GetTouristHandler,
+
+	"/worldship/login/sdk/quick": sdk.QuickSdkLoginHandler,
 }

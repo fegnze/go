@@ -1,0 +1,8 @@
+2019-03-17 00:00:04 [DEBUG] VersionHandle HttpExec ... (E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/handlers/stepAnalytics.go:25) 
+2019-03-17 00:00:04 [DEBUG] &{Region:1 Openid:0e698a8ffc1a0af622c7b4db3cb750cc@_() UID:72339073309691976 Channel:10003 Step:enterGame UniqueCode:3fd62642a87a705f0752ed681a678154 DeviceType:RHJvaWQ0WC5Ecm9pZDRY} (E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/handlers/stepAnalytics.go:28) 
+2019-03-17 00:00:04 [DEBUG] VersionHandle HttpExec ... (E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/handlers/stepAnalytics.go:25) 
+2019-03-17 00:00:04 [DEBUG] &{Region:1 Openid:0e698a8ffc1a0af622c7b4db3cb750cc@_() UID:72339073309691976 Channel:10003 Step:login_failed UniqueCode:3fd62642a87a705f0752ed681a678154 DeviceType:RHJvaWQ0WC5Ecm9pZDRY} (E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/handlers/stepAnalytics.go:28) 
+2019-03-17 00:00:35 [DEBUG] VersionHandle HttpExec ... (E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/handlers/stepAnalytics.go:25) 
+2019-03-17 00:00:35 [DEBUG] &{Region:1 Openid:0e698a8ffc1a0af622c7b4db3cb750cc@_() UID:72339073309691976 Channel:10003 Step:enterGame UniqueCode:3fd62642a87a705f0752ed681a678154 DeviceType:RHJvaWQ0WC5Ecm9pZDRY} (E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/handlers/stepAnalytics.go:28) 
+2019-03-17 00:00:35 [DEBUG] VersionHandle HttpExec ... (E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/handlers/stepAnalytics.go:25) 
+2019-03-17 00:00:35 [DEBUG] &{Region:1 Openid:0e698a8ffc1a0af622c7b4db3cb750cc@_() UID:72339073309691976 Channel:10003 Step:login_failed UniqueCode:3fd62642a87a705f0752ed681a678154 DeviceType:RHJvaWQ0WC5Ecm9pZDRY} (E:/WorkSpace/GoWorld/src/KiteNet/cmd/web/handlers/stepAnalytics.go:28) 

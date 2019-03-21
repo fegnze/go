@@ -1,6 +1,6 @@
 package sdk
 
-//QuickVerify quick sdk 登陆
+//QuickSdkLogin quick sdk 登陆
 import (
 	"KiteNet/cmd/web/global"
 	"KiteNet/cmd/web/global/code/ErrorCode"
@@ -9,6 +9,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strconv"
 )
 
 //reqProto quick sdk 登陆,客户端请求数据,本地类型
@@ -41,17 +42,21 @@ type MixLoginWorldResProto struct {
 	Port   string `json:"port"`
 	Level  string `json:"level"`
 	Name   string `json:"name"`
-	New    int    `json:"new"`
+	New    string `json:"new"`
 	Sid    string `json:"sid"`
 }
 
-//QuickVerifyHandler quick sdk 登陆,处理函数
-func QuickVerifyHandler(w http.ResponseWriter, r *http.Request) {
-	glog.Debug("QuickVerifyHandler ... quick sdk 登陆")
+//QuickSdkLoginHandler quick sdk 登陆,处理函数
+func QuickSdkLoginHandler(w http.ResponseWriter, r *http.Request) {
+	glog.Debug("QuickSdSdkLoginHandler ... quick sdk 登陆")
 	reqProto := &reqProto{}
 	httpkt.ParseReqProto(r, reqProto)
 
 	openID := reqProto.UserId
+	if openID == "" || reqProto.Region == "" || reqProto.Channel == "" {
+		httpkt.ReturnError(w,ErrorCode.ParameterNull,
+			"QuickSdkLoginHandler,ParameterNull,openid:"+openID+",reqProto.Region:"+reqProto.Region+",reqProto.Channel:"+reqProto.Channel)
+	}
 
 	//发送请求到world服务器
 	req := fmt.Sprintf("ul,android_cn_999_%s_%s,%s,%d,%s", openID, reqProto.Region, reqProto.Channel, 0, "0")
@@ -66,8 +71,13 @@ func QuickVerifyHandler(w http.ResponseWriter, r *http.Request) {
 	err := json.Unmarshal(response[0:], &res)
 	if err != nil {
 		glog.Error(err, "MixLoginHandler 解析world数据异常")
-		httpkt.ReturnError(w, ErrorCode.UnexpectedError, "RegisterHandler,UnexpectedError,json.Unmarshal,openid:"+openID)
+		httpkt.ReturnError(w, ErrorCode.UnexpectedError, "QuickSdkLoginHandler,UnexpectedError,json.Unmarshal,openid:"+openID)
 		return
+	}
+
+	isnew,err := strconv.Atoi(res.New)
+	if err != nil {
+		isnew = -1
 	}
 
 	resArr := []resProto{
@@ -78,7 +88,7 @@ func QuickVerifyHandler(w http.ResponseWriter, r *http.Request) {
 			Uid:    res.Id,
 			Region: reqProto.Region,
 			Openid: openID,
-			IsNew:  res.New,
+			IsNew:  isnew,
 		},
 	}
 

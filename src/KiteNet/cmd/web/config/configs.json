@@ -9,7 +9,7 @@
     "db": {
       "host": "localhost:3306",
       "user": "root",
-      "password": "123456",
+      "password": "111111",
       "dbname": "worldship"
     },
     //静态文件托管配置

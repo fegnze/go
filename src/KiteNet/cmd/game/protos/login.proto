@@ -9,7 +9,6 @@ message Login {
     string Pid = 1;
 }
 
-
 message BeatHart {
     int64 OnlineTime = 1;
 }

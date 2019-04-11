@@ -37,7 +37,7 @@ func main() {
 	}()
 	loger = log.New(logFile, "", log.LstdFlags)
 
-	output, err := os.OpenFile(path+"/templateLang.lua", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0666)
+	output, err := os.OpenFile(path+"/TemplateLang.lua", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0666)
 	if err != nil {
 		loger.Println(err)
 	}
@@ -61,6 +61,9 @@ func main() {
 		checkErr(err)
 		loger.Printf("字节:%d\n", n)
 		fmt.Println("字节:", n)
+
+		h := []byte("\n\n")
+		output.Write(h)
 	}
 	loger.Println("执行完毕.")
 	fmt.Println("执行完毕.")

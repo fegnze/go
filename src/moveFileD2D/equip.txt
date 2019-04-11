@@ -1,0 +1,12 @@
+E:\WorkSpace\Gaoda-trunk\tankui\cocosstudio\img\icon\parts_small
+E:\WorkSpace\Kapai\Games\wyqt999\data
+small_chuanjiadan.png	sprit/item/f_w_101_01.png
+small_ranshaodan.png	sprit/item/f_w_101_02.png
+small_xiangjiaolvdai.png	sprit/item/f_h_101_01.png
+small_junzhizhuangjia.png	sprit/item/f_s_101_01.png
+small_qiyouji.png	sprit/item/f_j_101_01.png
+small_wugangchuanjiadan.png	sprit/item/f_w_102_03.png
+small_gaobaodan.png	sprit/item/f_w_102_02.png
+small_jinshuxiaoshilvdai.png	sprit/item/f_h_102_04.png
+small_hejinzhuangjia.png	sprit/item/f_s_102_04.png
+small_chaiyouji.png	sprit/item/f_j_102_04.png

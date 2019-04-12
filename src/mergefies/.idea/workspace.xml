@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04cbb1cf-7576-4c5c-bb13-2f2cbdbc2ed3" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/../moveFileD2D/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moveFileD2D/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moveFileD2D/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moveFileD2D/.idea/moveFileD2D.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moveFileD2D/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moveFileD2D/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moveFileD2D/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../KiteNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KiteNet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../makePlist/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../makePlist/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../moveFileD2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../moveFileD2D/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,9 +93,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="91" />
-    <option name="y" value="68" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-147" />
+    <option name="y" value="107" />
     <option name="width" value="1918" />
     <option name="height" value="1085" />
   </component>
@@ -112,7 +105,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,6 +116,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,9 +175,9 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="68" width="1918" height="1085" extended-state="1" />
+    <frame x="-147" y="107" width="1918" height="1085" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14409535" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14626218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -197,7 +190,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32903227" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="调试" order="12" weight="0.32977587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />

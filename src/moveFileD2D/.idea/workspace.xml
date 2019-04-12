@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4ae9493-67c8-4791-884e-fa5c3eed0121" name="默认更改列表" comment="">
       <change afterPath="$PROJECT_DIR$/../mkPListDir/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mkPListDir/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../KiteNet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KiteNet/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mergefies/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mergefies/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />

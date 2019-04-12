@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f16cfb4-09a2-40bf-8d42-27112985bcc5" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/cmd/web/handlers/sdk/quickSdkLogin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../makePlist/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../makePlist/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/KiteNet/cmd/web/config.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/KiteNet/cmd/web/config.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/KiteNet/cmd/web/global.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/KiteNet/cmd/web/global.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/KiteNet/cmd/web/handlers.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/KiteNet/cmd/web/handlers.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/KiteNet/log.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/KiteNet/log.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/game/protos/login.proto" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/game/protos/login.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/web/config/configs.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/config/configs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/web/config/configs.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/config/configs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/web/handlers/Template" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/handlers/Template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/web/handlers/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/handlers/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/web/logs/201903050800.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/web/output" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/web/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/web/web.exe" beforeDir="false" />
-    </list>
+    <list default="true" id="8f16cfb4-09a2-40bf-8d42-27112985bcc5" name="默认更改列表" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/cmd/web/handlers/sdk/quickSdkLogin.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="227">
-              <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -282,28 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KiteNet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KiteNet" type="462c0819:PsiDirectoryNode" />
-              <item name="cmd" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -411,9 +372,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49957663" visible="true" weight="0.18830472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49957663" visible="true" weight="0.19098713" />
       <window_info id="Structure" order="1" sideWeight="0.5004234" side_tool="true" weight="0.20591398" />
       <window_info id="Favorites" order="2" sideWeight="0.5004234" side_tool="true" weight="0.20591398" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -426,7 +386,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49839056" weight="0.32963374" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49409872" visible="true" weight="0.27081022" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49409872" weight="0.27081022" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5037554" side_tool="true" weight="0.5649279" />
       <window_info anchor="bottom" id="调试" order="12" sideWeight="0.49624464" weight="0.29078802" />
       <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49973118" weight="0.32973894" />
@@ -731,10 +691,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/web/logs/201903150800_debug" />
     <entry file="file://$PROJECT_DIR$/cmd/web/handlers/sdk/quickSdkLogin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="69" column="34" lean-forward="true" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -759,13 +720,6 @@
           <folding>
             <element signature="e#34#124#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmd/web/logs/201903150800_debug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>

@@ -56,7 +56,7 @@ func main() {
 	}
 	confs,err:=os.Open(b)
 	if err != nil{
-		loger.Panicln("指定文件无法打开!")
+		loger.Panicln("指定文件无法打开!",b)
 		return
 	}
 	defer func() {
@@ -86,6 +86,25 @@ func main() {
 
 				str := string(line)
 				parts := strings.Split(str,"\t")
+				if len(parts) == 1 {
+					orign := orignpath+"/" + parts[0]
+					namestr:=strings.Replace(parts[0],"/","\\",-1)
+					ns := strings.Split(namestr,"\\")
+					name:=ns[len(ns)-1]
+					dest := destPath+"/"+name
+					loger.Println("该条目未配置成对值,作为单文件拷贝到输出目录",orign)
+					fmt.Println("该条目未配置成对值,作为单文件拷贝到输出目录",orign)
+
+					if _,err:=os.Stat(orign);os.IsNotExist(err){
+						loger.Println("操作文件不存在")
+						fmt.Println("操作文件不存在")
+						continue
+					}
+
+					copyFile(orign,dest)
+					continue
+				}
+
 				orign := orignpath+"/" + parts[1]
 				tmp:= parts[0]
 				names:=strings.Split(tmp,".")
@@ -93,22 +112,27 @@ func main() {
 				dest := destPath+"/."+name+"_PList.Dir/"+ parts[0]
 				destBk := destPath+"/."+name+"_PList.Dir/backup_"+ parts[0]
 
-				orign = strings.Replace(orign,"\\","/",-1)
-				dest = strings.Replace(dest,"\\","/",-1)
-				destBk = strings.Replace(destBk,"\\","/",-1)
+				orign = strings.Replace(orign,"/","\\",-1)
+				dest = strings.Replace(dest,"/","\\",-1)
+				destBk = strings.Replace(destBk,"/","\\",-1)
 
-				loger.Println("执行:",orign,dest)
+				loger.Println("执行:",fmt.Sprintf("%s",orign),dest)
 				//fmt.Println("执行:",orign,dest)
 
 				_,e1:= os.Stat(orign)
 				_,e2:= os.Stat(dest)
-				if !os.IsNotExist(e1) && !os.IsNotExist(e2){
-					fmt.Println("move:",orign,dest)
-					err:=os.Rename(dest, destBk)
-					checkErr(err)
-
-					copyFile(orign,dest)
+				if os.IsNotExist(e1) {
+					loger.Println("文件不存在:",orign)
+					continue
 				}
+				if os.IsNotExist(e2){
+					loger.Println("文件不存在:",dest)
+				}
+
+				fmt.Println("move:",orign,dest)
+				copyFile(fmt.Sprintf("%s",dest),destBk)
+
+				copyFile(orign,dest)
 			}
 		} else {
 			break

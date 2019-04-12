@@ -1,0 +1,5 @@
+E:\WorkSpace\GoWorld\src\moveFileD2D\asdasd
+E:/WorkSpace/GoWorld/src/moveFileD2D/data
+sprit/item/f_i_103_05.png
+3104.png	sprit/item/baoshidai1.png
+3105.png	sprit/item/baoshidai12.png
